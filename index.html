@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habiba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrap">
+            <div id="box">
+                <h2>Kya Smile Hai Apki</h2>
+                <img width="100%" src="img/angel1.jpeg" alt="">
+            </div>
+            <div id="wellcome" >
+                <div class="center">
+                    <h1>Wellcome Ovimani Meye Habiba</h1>
+                <p>Touch Here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var wellcome = document.getElementById("wellcome");
+        var box = document.getElementById("box");
+
+
+        wellcome.addEventListener("click", function(){
+            wellcome.classList.add("active");
+        });
+        box.addEventListener("click", function(){
+            wellcome.classList.remove("active");
+        });
+
+
+    </script>
+</body>
+</html>
